@@ -1,11 +1,13 @@
 // pages/home/home.js
+var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    username:''
   },
 
   /**
@@ -62,5 +64,14 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  onGotUserInfo: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    this.setData({
+      username: e.detail.userInfo.nickName
+    })
+  },
 })
