@@ -1,0 +1,20 @@
+/* pages/home/home.wxss */
+
+.item_list {
+  width: 160rpx;
+  height: auto;
+  margin-left: 20rpx;
+  display: inline-block;
+  text-align: center;
+}
+
+.item_pic {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.item_text {
+  color: #9f9f9f;
+  font-size: 14px;
+}

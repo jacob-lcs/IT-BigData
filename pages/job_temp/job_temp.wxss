@@ -1,0 +1,27 @@
+
+.job_info{
+   display: flex;
+   height: 160rpx;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx ;
+}
+
+
+.jobname{
+  font-size: 50rpx;
+  margin: 20rpx 200rpx 0 20rpx;
+}
+
+.salary{
+  color: red;
+  margin-bottom: 20rpx;
+}
+
+.sum{
+  font-size: 25rpx;
+}
+

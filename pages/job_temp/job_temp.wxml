@@ -1,0 +1,23 @@
+<template name="joblist">
+  <view class="job_item">
+    <navigator url="../job_details/job">
+      
+      <view class="job_info">
+
+         <!--职位名称-->
+          <view class="jobname">{{jobname}}</view>
+
+          <view class="right">
+
+              <!--平均工资、在招岗位数量-->
+               <text class="salary">{{salary}} </text>
+               <text class="sum">{{sum}}个在招职位</text>
+
+          </view>
+
+      </view>
+
+
+    </navigator>
+  </view>
+</template>

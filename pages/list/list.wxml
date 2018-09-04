@@ -1,0 +1,11 @@
+ <!--岗位分类一览-->
+ 
+<import src="../job_temp/job_temp.wxml"/>
+
+ <scroll-view scroll-y="true" class="scrollfood" scroll-into-view="1" scroll-top="200rpx">
+    <view class="joblist">
+      <block wx:for="{{joblist}}">
+      <template is="joblist" data="{{...item}}"/>
+      </block>
+    </view>
+  </scroll-view>
