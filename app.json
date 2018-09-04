@@ -1,5 +1,14 @@
 {
   "pages": [
-    "pages/first/first"
-  ]
+    "pages/map/index"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "enablePullDownRefresh": false
+  }
 }
