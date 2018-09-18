@@ -15,3 +15,7 @@
   <i-tab key="大连" title="大连"></i-tab>
   <i-tab key="长沙" title="长沙"></i-tab>
 </i-tabs>
+
+<view >
+    <loading wx:if="{{showLoading}}">加载中</loading>
+</view>

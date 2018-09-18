@@ -3,7 +3,7 @@ var Bmob = require('../../dist/Bmob-1.6.3.min.js');
 var app = getApp()
 let chart = null;
 var city = app.globalData.city
-let that =this
+let that = this
 // var city = this.data.current
 
 Page({
@@ -30,9 +30,8 @@ Page({
       current: app.globalData.current_scroll
     })
     wx.redirectTo({
-      url: '/pages/bar/index?city='+app.globalData.current_scroll
+      url: '/pages/bar/index?city=' + app.globalData.current_scroll
     })
-
   },
 
   data: {
@@ -41,7 +40,8 @@ Page({
       onInit: initChart
     },
     guimo: {},
-    current_scroll: app.globalData.current_scroll
+    current_scroll: app.globalData.current_scroll,
+    showLoading: false
   },
 
   onReady() {
@@ -52,8 +52,8 @@ Page({
     }, 2000);
   },
 
-  onLoad: function(options){
-    if(options != null){
+  onLoad: function(options) {
+    if (options != null) {
       this.setData({
         current_scroll: options.city
       })
