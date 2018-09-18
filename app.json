@@ -8,11 +8,10 @@
     "pages/language_intro/lan_intro",
     "pages/bigdatas/bigdatas",
     "pages/map/index",
-    "pages/firm_scale/firm",
     "pages/edu_req/edu",
-    "pages/average_salary/salary"
+    "pages/average_salary/salary",
+    "pages/test/test"
   ],
-
   "window": {
     "backgroundTextStyle": "light",
     "backgroundColor": "#eee",
@@ -20,5 +19,9 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小程序",
     "enablePullDownRefresh": false
+  },
+  "usingComponents": {
+    "i-tabs": "./dist/tabs/index",
+    "i-tab": "./dist/tab/index"
   }
 }

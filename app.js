@@ -38,6 +38,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    city: "上海"
+    city: "广州",
+    current: "广州",
+    current_scroll: '广州'
   }
 })

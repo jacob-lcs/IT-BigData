@@ -1,7 +1,7 @@
  <view class="container">
     
     <view class="item">
-      <navigator url="../firm_scale/firm">
+      <navigator url="../bar/index">
         <image src="/images/01.jpg" class="photo"/>
         <view class="detail">大公司？小公司？</view>
       </navigator>

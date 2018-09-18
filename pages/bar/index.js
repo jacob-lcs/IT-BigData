@@ -2,34 +2,46 @@ import * as echarts from '../../ec-canvas/echarts';
 var Bmob = require('../../dist/Bmob-1.6.3.min.js');
 var app = getApp()
 let chart = null;
-var city = "上海"
+var city = app.globalData.city
+let that =this
+// var city = this.data.current
 
 Page({
-  onShareAppMessage: function(res) {
-    return {
-      title: 'ECharts 可以在微信小程序中使用啦！',
-      path: '/pages/index/index',
-      success: function() {},
-      fail: function() {}
-    }
+  // handleChange({ detail }) {
+  //   console.log("handleChange函数运行")
+  //   this.setData({
+  //     current: app.globalData.current
+  //   });
+  //   console.log("current值为：", this.data.current)
+  // },
+
+  handleChangeScroll({
+    detail
+  }) {
+    console.log("handleChangeScroll函数运行")
+    app.globalData.current_scroll = detail.key
+    app.globalData.city = detail.key
+    this.setData({
+      current_scroll: app.globalData.current_scroll
+    });
+    app.globalData.city = detail.key
+    console.log("app.globalData.current_scroll", app.globalData.current_scroll)
+    this.setData({
+      current: app.globalData.current_scroll
+    })
+    wx.redirectTo({
+      url: '/pages/bar/index?city='+app.globalData.current_scroll
+    })
+
   },
+
   data: {
+    current_scroll: app.globalData.current_scroll,
     ec: {
       onInit: initChart
     },
     guimo: {},
-    shaoyu50: 100,
-    shaoyu150: '',
-    shaoyu500: '',
-    shaoyu1000: '',
-    shaoyu5000: '',
-    shaoyu10000: '',
-    duo10000: '',
-    city: "四平"
-  },
-
-  test: function() {
-    duo10000 = 90
+    current_scroll: app.globalData.current_scroll
   },
 
   onReady() {
@@ -38,16 +50,23 @@ Page({
       console.log(chart)
       // console.log("在图像初始化中尝试：", that.data.shaoyu50)
     }, 2000);
-    city = this.data.city
   },
 
-
-
+  onLoad: function(options){
+    if(options != null){
+      this.setData({
+        current_scroll: options.city
+      })
+    }
+    console.log("options: ", options)
+  }
 });
 
 function initChart(canvas, width, height, city) {
   canvas.setChart(chart);
   city = app.globalData.city
+  console.log("获取数据的城市名：", city)
+  // city = this.data.current
   const query = Bmob.Query("gongsi_guimo");
   query.equalTo("city", "==", city);
   query.find().then(res => {
@@ -65,7 +84,7 @@ function initChart(canvas, width, height, city) {
         }
       },
       legend: {
-        data: ['热度', '正面', '负面']
+
       },
       grid: {
         left: 20,

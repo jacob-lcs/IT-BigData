@@ -2,4 +2,16 @@
 <view class="container">
   <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
 </view>
-<!-- <button bindtap='test'>test</button> -->
+
+<i-tabs current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+  <i-tab key="广州" title="广州"></i-tab>
+  <i-tab key="宁波" title="宁波"></i-tab>
+  <i-tab key="深圳" title="深圳"></i-tab>
+  <i-tab key="上海" title="上海"></i-tab>
+  <i-tab key="北京" title="北京"></i-tab>
+  <i-tab key="成都" title="成都"></i-tab>
+  <i-tab key="武汉" title="武汉"></i-tab>
+  <i-tab key="南京" title="南京"></i-tab>
+  <i-tab key="大连" title="大连"></i-tab>
+  <i-tab key="长沙" title="长沙"></i-tab>
+</i-tabs>
