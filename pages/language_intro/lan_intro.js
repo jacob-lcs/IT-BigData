@@ -8,7 +8,17 @@ Page({
       
       { language: 'Python' },
       { language: 'Java' },
-
+      { language: 'Lua' },
+      { language: 'prolog' },
+      { language: 'c' },
+      { language: 'c++' },
+      { language: 'php' },
+      { language: 'perl' },
+      { language: 'css' },
+      { language: 'html' },
+      { language: 'Javascript' },
+      { language: 'lisp' },
+      { language: 'Go' },
     ]
   },
 

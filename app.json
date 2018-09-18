@@ -1,13 +1,16 @@
 {
   "pages": [
+    "pages/bar/index",
     "pages/home/home",
-    "pages/assess/assess",
     "pages/job_details/job",
     "pages/lan_details/lan_details",
     "pages/list/list",
     "pages/language_intro/lan_intro",
     "pages/bigdatas/bigdatas",
-    "pages/map/index"
+    "pages/map/index",
+    "pages/firm_scale/firm",
+    "pages/edu_req/edu",
+    "pages/average_salary/salary"
   ],
 
   "window": {

@@ -1,1 +1,6 @@
 @import "../job_temp/job_temp.wxss";
+
+.list{
+
+  height: 100%;
+}

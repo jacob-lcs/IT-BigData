@@ -1,11 +1,23 @@
-<template name="lan">
-  <view class="job_item">
+<template name="lan1">
+  <view class="lan_item" style="background:red">
     <navigator url="../lan_details/lan_details">
       
       
+    <text class="name">{{language}} </text>
+              
 
+    </navigator>
+  </view>
+</template>
+
+
+
+<template name="lan2">
+  <view class="lan_item" style="background:grey">
+    <navigator url="../lan_details/lan_details">
       
-    <text class="language">{{language}} </text>
+      
+    <text class="name">{{language}} </text>
               
 
     </navigator>

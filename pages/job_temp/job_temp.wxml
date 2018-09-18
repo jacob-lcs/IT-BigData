@@ -15,7 +15,10 @@
 
           </view>
 
+         
       </view>
+
+    <view class="line"></view> 
 
 
     </navigator>

@@ -1,0 +1,10 @@
+
+.lan_item{
+    width: 200rpx;
+    height: 200rpx;
+    border:solid black;
+    text-align: center;
+    margin: 20rpx 0 0 20rpx;
+    
+}
+

@@ -6,8 +6,18 @@
 
     <view class="lan_list">
       <block wx:for="{{lan_list}}">
-      <template is="lan" data="{{...item}}"/>
+
+      <view wx:if="{{index==3}}">
+      <template is="lan1" data="{{...item}}"/>
+      </view>
+
+      <view wx:else>
+          <template is="lan2" data="{{...item}}"/>
+      </view>
+
+
       </block>
     </view>
 
   </scroll-view>
+  

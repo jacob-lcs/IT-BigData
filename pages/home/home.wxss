@@ -1,5 +1,106 @@
 /* pages/home/home.wxss */
 
+.index{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper{
+  height: 600rpx;
+}
+
+.poster{
+  width: 100%;
+  height: 600rpx;
+}
+
+
+.downpart{
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.bigdatas{
+   background: #a8d0e6;
+   width: 340rpx;
+   
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+   
+    width: 410rpx;
+}
+
+
+.joblist{
+   background: #f8e9a1;
+   height: 300rpx;
+
+}
+
+
+.lan_intro{
+   background: #fa8585;
+   height: 300rpx;
+}
+
+
+.text1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size:50rpx; 
+  margin-top: 200rpx;
+ 
+  color: #686868;
+
+}
+
+.text2{
+
+  margin-top: 120rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #686868;
+}
+
+
+.text3{
+
+   margin-top: 120rpx;
+   text-align: center;
+   font-size: 40rpx;
+   color: #686868;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .item_list {
   width: 160rpx;
   height: auto;
@@ -18,3 +119,8 @@
   color: #9f9f9f;
   font-size: 14px;
 }
+
+*/
+
+
+

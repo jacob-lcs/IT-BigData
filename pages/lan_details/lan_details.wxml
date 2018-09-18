@@ -1,0 +1,11 @@
+
+<scroll-view scroll-y="true" class="container" scroll-into-view="1" scroll-top="200rpx" sytle="white-space:nowrap">
+
+    <view class='title'>简介</view>
+     <view class='content'>{{intro}}</view>
+
+    <view class='title'>应用方向</view>
+     <view class='content'>{{apply}}</view>
+
+</scroll-view>
+

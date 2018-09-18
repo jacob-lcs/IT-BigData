@@ -1,18 +1,61 @@
 
 
 <view class="index">
- 
-   <view class="item_list" wx:for="{{list}}" wx:key="{{list}}">
+
+ <!-- 
+ <view class="item_list" wx:for="{{list}}" wx:key="{{list}}">
       <navigator url="{{item.url}}">
         <image src="{{item.pic}}" class="item_pic"></image>
         <view class="item_text">{{item.name}}</view>
       </navigator>
     </view>
+    -->
+  
    
+   <swiper indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"
+           class="swiper">  
+         <block wx:for="{{imgUrls}}">  
+           <swiper-item>  
+              
+               <image src="{{item.url}}" class="poster"/>  
+             
+           </swiper-item>  
+         </block>  
+ </swiper>  
+
+    <view class="downpart">
+
+     <view class="bigdatas">
+        <navigator url='/pages/bigdatas/bigdatas'>
+
+         <view class="text1">
+           <text>大 数 据</text>
+           <text>一  览</text>
+         </view>
+        </navigator>
+     </view>
+
+
+     <view class="right">
+
+       <view class="joblist">
+          <navigator url='/pages/list/list'>
+            <view class="text2">岗位分类</view>
+          </navigator>
+       </view>
+
+       <view class="lan_intro">
+          <navigator url='/pages/language_intro/lan_intro'>
+            <view class="text3">语言介绍</view>
+          </navigator>
+       </view>
+    
+     </view>
+
+    </view>
  
 
 </view>
 
 
-
-<button class="assess">自我评估</button>

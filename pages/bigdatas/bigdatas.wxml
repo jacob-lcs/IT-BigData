@@ -1,0 +1,24 @@
+ <view class="container">
+    
+    <view class="item">
+      <navigator url="../firm_scale/firm">
+        <image src="/images/01.jpg" class="photo"/>
+        <view class="detail">大公司？小公司？</view>
+      </navigator>
+    </view>
+
+     <view class="item">
+      <navigator url="../average_salary/salary">
+        <image src="/images/02.jpg" class="photo"/>
+        <view class="detail">没有对比就没有伤害</view>
+      </navigator>
+    </view>
+
+    <view class="item">
+      <navigator url="../edu_req/edu">
+        <image src="/images/03.jpg" class="photo"/>
+        <view class="detail">本科僧？研究僧？</view>
+      </navigator>
+    </view>
+ 
+ </view>

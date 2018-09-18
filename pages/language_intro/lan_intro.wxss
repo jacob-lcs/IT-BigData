@@ -1,1 +1,9 @@
 @import "../lan_temp/lan_temp.wxss";
+
+.lan_list{
+
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+ 
+}
