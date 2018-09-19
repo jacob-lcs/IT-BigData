@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  margin: 0 20rpx;
+}
+
+.line {
+  width: 50rpx;
+  height: 3rpx;
+  background: rgb(161, 161, 161);
+  margin: 0 0 0 20rpx;
+}
+
+.text {
+  margin: 0 0 0 20rpx;
+}
+
+.content {
+  margin: 0 60rpx 50rpx 60rpx;
+  font-size: 28rpx;
+}
