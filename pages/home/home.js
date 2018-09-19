@@ -69,27 +69,24 @@ data:{
   list: [
     {
       name: '岗位分类',
-      pic: "/images/gangwei.png",
       url: '/pages/list/list',
     },
     {
       name: '语言介绍',
-      pic: '/images/gangwei.png',
       url: '/pages/language_intro/lan_intro',
     },
     {
       name: '大数据一览',
-      pic: '/images/gangwei.png',
       url: '/pages/bigdatas/bigdatas',
     }
   ],
 
   imgUrls: [
     {
-      url: '1.jpg'
+      url: 'http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/c1b8844d4034753280e0ac9bf4a05a24.jpg'
     }, 
     {
-      url: '2.jpg'
+      url: 'http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/72c6dcb240be36678002212ec77efd6b.jpg'
     }, 
     
   ],

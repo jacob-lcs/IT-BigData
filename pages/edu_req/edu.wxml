@@ -1,0 +1,11 @@
+<scroll-view scroll-y="true" class="container" scroll-into-view="1"  sytle="white-space:nowrap">
+
+ <view class="container">
+
+   <view class="" wx:for="{{pic}}">
+     <image class="pic" src="{{item}}" mode="aspectFit"></image>
+   </view>
+
+ </view>
+
+</scroll-view>

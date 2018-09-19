@@ -1,0 +1,5 @@
+.photo{
+
+  height:1000rpx;
+  width: 800rpx;
+}

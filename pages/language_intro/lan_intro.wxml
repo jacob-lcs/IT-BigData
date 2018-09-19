@@ -1,23 +1,15 @@
 <!--语言列表一览-->
- 
-<import src="../lan_temp/lan_temp.wxml"/>
 
- <scroll-view scroll-y="true" class="scrollfood" scroll-into-view="1" scroll-top="200rpx">
+<import src="../lan_temp/lan_temp.wxml" />
 
-    <view class="lan_list">
-      <block wx:for="{{lan_list}}">
+<scroll-view scroll-y="true" class="scrollfood" scroll-into-view="1" scroll-top="200rpx">
 
-      <view wx:if="{{index==3}}">
-      <template is="lan1" data="{{...item}}"/>
-      </view>
+  <view class="lan_list">
+    <block wx:for="{{lan_list}}">
 
-      <view wx:else>
-          <template is="lan2" data="{{...item}}"/>
-      </view>
+      <template is="lan1" data="{{...item}}" />
 
+    </block>
+  </view>
 
-      </block>
-    </view>
-
-  </scroll-view>
-  
+</scroll-view>

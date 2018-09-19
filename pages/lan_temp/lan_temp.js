@@ -1,31 +1,22 @@
-var Bmob = require('../../dist/Bmob-1.6.3.min.js');
-
 Page({
 
+
+  lan: function () {
+    wx.navigateTo({
+      url: '../lan_details/job?name='+this.data.name,
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-    name:'',
-    intro:'',
-    apply:''
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const query = Bmob.Query("language_show");
-    console.log('options.name: ', options.name)
-    query.equalTo("name", "==", options.name);
-    query.find().then(res => {
-      console.log(res)
-      this.setData({
-        intro: res[0].jieshao,
-        apply: res[0].Ap_direction
-      })
-    });
-    
   },
 
   /**
@@ -77,3 +68,4 @@ Page({
     
   }
 })
+

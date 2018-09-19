@@ -1,41 +1,36 @@
+var Bmob = require('../../dist/Bmob-1.6.3.min.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    lan_list:[
-      
-      { language: 'Python' },
-      { language: 'Java' },
-      { language: 'Lua' },
-      { language: 'prolog' },
-      { language: 'c' },
-      { language: 'c++' },
-      { language: 'php' },
-      { language: 'perl' },
-      { language: 'css' },
-      { language: 'html' },
-      { language: 'Javascript' },
-      { language: 'lisp' },
-      { language: 'Go' },
+    lan_list: [
     ]
   },
 
- 
-  onLoad: function (options) {},
 
-  onReady: function () {},
+  onLoad: function (options) {
+    const query = Bmob.Query("language_show");
+    query.find().then(res => {
+      console.log(res)
+      this.setData({
+        lan_list: res
+      })
+    });
+   },
 
-  onShow: function () {},
+  onReady: function () { },
 
-  onHide: function () {},
+  onShow: function () { },
 
-  onUnload: function () {},
+  onHide: function () { },
 
-  onPullDownRefresh: function () {},
+  onUnload: function () { },
 
-  onReachBottom: function () {},
+  onPullDownRefresh: function () { },
 
-  onShareAppMessage: function () {}
+  onReachBottom: function () { },
+
+  onShareAppMessage: function () { }
 })

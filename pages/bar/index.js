@@ -121,7 +121,7 @@ function initChart(canvas, width, height, city) {
       }],
 
       series: [{
-        name: '上海',
+        
         type: 'bar',
         label: {
           normal: {

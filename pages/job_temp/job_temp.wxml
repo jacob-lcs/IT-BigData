@@ -1,24 +1,29 @@
 <template name="joblist">
   <view class="job_item">
-    <navigator url="../job_details/job">
+    <navigator>
       
       <view class="job_info">
 
-         <!--职位名称-->
-          <view class="jobname">{{jobname}}</view>
+         <view class="left">
 
-          <view class="right">
+            <view class="fang"></view>
+             <!--职位名称-->
+            <view class="jobname">{{zhiwei}}</view>
+
+         </view>
+
+        <view class="right">
 
               <!--平均工资、在招岗位数量-->
-               <text class="salary">{{salary}} </text>
-               <text class="sum">{{sum}}个在招职位</text>
+               <text class="salary">{{gongzi}}RMB </text>
+               <text class="sum">{{shuliang}}个在招职位</text>
 
-          </view>
+        </view>
 
          
       </view>
 
-    <view class="line"></view> 
+     
 
 
     </navigator>

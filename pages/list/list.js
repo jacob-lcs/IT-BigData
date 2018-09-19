@@ -1,5 +1,5 @@
 /*岗位分类一览 */
-
+var Bmob = require('../../dist/Bmob-1.6.3.min.js');
 Page({
 
   /**
@@ -7,35 +7,35 @@ Page({
    */
   data: {
 
-    joblist:[
-      {
-        jobname:'产品经理',
-        salary:'15千',
-        sum: 5000
-      },
-      {
-        jobname: '大数据工程师',
-        salary: '20千',
-        sum: 1100
-      }
+    joblist: [
+      
     ]
+
+  },
+
+
+  onLoad: function (options) {
+    const query = Bmob.Query("quanguo_pjgz");
+    query.find().then(res => {
+      console.log(res)
+      this.setData({
+          joblist: res
+      })
+    });
     
   },
 
- 
-  onLoad: function (options) {},
+  onReady: function () { },
 
-  onReady: function () {},
+  onShow: function () { },
 
-  onShow: function () {},
+  onHide: function () { },
 
-  onHide: function () {},
+  onUnload: function () { },
 
-  onUnload: function () {},
+  onPullDownRefresh: function () { },
 
-  onPullDownRefresh: function () {},
+  onReachBottom: function () { },
 
-  onReachBottom: function () {},
-
-  onShareAppMessage: function () {}
+  onShareAppMessage: function () { }
 })
