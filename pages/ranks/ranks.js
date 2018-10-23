@@ -13,7 +13,7 @@ Page({
       {
         id: 2,
         name: '不满意度排行榜',
-        pic:'http://bmob-cdn-21583.b0.upaiyun.com/2018/10/22/436e441740b11b2c800f4256ad58bd39.png'
+      
       },
       {
         id: 3,
