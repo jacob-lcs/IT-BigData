@@ -1,5 +1,12 @@
+
+.container{
+  margin-top: 0rpx;
+  text-align: center;
+}
+
+
 .photo{
 
-  height:1000rpx;
-  width: 800rpx;
+  
+  width: 820rpx;
 }

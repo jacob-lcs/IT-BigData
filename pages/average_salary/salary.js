@@ -61,5 +61,14 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+
+  imgYu: function (event) {
+    var src = event.currentTarget.dataset.src;//获取data-src
+    wx.previewImage({
+      urls: [src], // 当前显示图片的http链接
+
+    })
   }
+
 })

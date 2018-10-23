@@ -5,14 +5,15 @@
 
         <view class="item1">
             <navigator url="../bar/index">
-              <text class="word1">热门城市</text>
-              <text class="word2">公司规模统计</text> 
+              <view class="word1">热门城市</view>
+              <view class="word2">公司规模统计</view> 
             </navigator>       
         </view>
 
         <view class="item2">
            <navigator url="../average_salary/salary"> 
-               <text class="word2">不同职业对比</text>  
+               <view class='word1'>不同</view>
+               <view class="word2">职业对比</view>  
            </navigator>    
         </view>
 
@@ -25,15 +26,15 @@
 
         <view class="item3">
           <navigator url="../ranks/ranks">
-            <text class="word1">你想看的</text>
-            <text class="word2">公司排名</text> 
+            <view class="word1">你想看的</view>
+            <view class="word2">公司排名</view> 
           </navigator>       
         </view>
 
         <view class="item4">
           <navigator url="../edu_req/edu">
-            <text class="word1">热门城市</text>
-            <text class="word2">学历要求</text>  
+            <view class="word1">热门城市</view>
+            <view class="word2">学历要求</view>  
           </navigator>   
         </view>
 

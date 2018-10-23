@@ -25,6 +25,6 @@
 }
 
 .pic{
-   width: 700rpx;
+   width: 600rpx;
 
 }

@@ -18,12 +18,12 @@
 
 .cloud{
    margin-left: 0rpx;
-   width:450rpx; 
+   width:470rpx; 
 }
 
 .zhiwei{
   font-size: 50rpx;
-  
+  color: rgb(51, 108, 161)
 }
 
 .title{

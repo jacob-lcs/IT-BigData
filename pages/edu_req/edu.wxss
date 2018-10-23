@@ -15,34 +15,36 @@
 
 .nav_city_items{
   display: inline-block;
-  background:#fffaf0;
-  border-top:6rpx solid #F17c67;
-  border-bottom: 6rpx solid #F17c67;
-  border-left: 6rpx solid #F17c67;
- 
+  background:#e6effc;
+  
+  border-radius: 15rpx;
+
   height: 60rpx; 
-  width: 160rpx;
+  width: 130rpx;
   text-align: center;
   font-size: 28rpx;
-  line-height: 70rpx;
+  line-height: 60rpx;
   
+  margin-left: 10rpx;
+  margin-top:10rpx;
 
 }
 
 /*窗口被选中时*/ 
 .active{
   display: inline-block;
-  background: #F17c67;
-  border-top:6rpx solid #F17c67;
-  border-bottom: 6rpx solid #F17c67;
-  border-left: 6rpx solid #F17c67;
-
+  background: rgb(86, 133, 202);
+  
+  border-radius: 15rpx;
   height: 60rpx; 
-  width: 160rpx;
+  width: 130rpx;
   text-align: center;
   color: #fffaf0;
   font-size: 28rpx;
-  line-height: 70rpx;
+  line-height: 60rpx;
+
+  margin-left: 10rpx;
+  margin-top:10rpx;
   
 }
 .scrollwindow{
