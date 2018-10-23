@@ -16,6 +16,7 @@ Page({
 
   onLoad: function (options) {
     const query = Bmob.Query("quanguo_pjgz");
+    query.order("-updatedAt")
     query.find().then(res => {
       console.log(res)
       this.setData({
