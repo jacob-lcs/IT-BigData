@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+.re{
+   width:750rpx;
+   margin-left: 0rpx;
+   
+
+}
+
+
+.cloud{
+   margin-left: 0rpx;
+   width:450rpx; 
+}
+
+.zhiwei{
+  font-size: 50rpx;
+  
+}
+
+.title{
+ text-align: center;
+}
+

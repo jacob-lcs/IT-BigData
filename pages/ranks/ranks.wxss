@@ -1,0 +1,30 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active{
+  text-align: center;
+  width: 680rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: rgb(255, 236, 225);
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+}
+
+.normal{
+  text-align: center;
+  width: 680rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: rgb(255, 249, 246);
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+}
+
+.pic{
+   width: 700rpx;
+
+}

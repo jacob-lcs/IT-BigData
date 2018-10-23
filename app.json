@@ -10,7 +10,8 @@
     "pages/edu_req/edu",
     "pages/average_salary/salary",
     "pages/test/test",
-    "pages/bar/index"
+    "pages/bar/index",
+    "pages/ranks/ranks"
   ],
   "window": {
     "backgroundTextStyle": "light",

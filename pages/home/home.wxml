@@ -30,8 +30,8 @@
         <navigator url='/pages/bigdatas/bigdatas'>
 
          <view class="text1">
+           <text>行 业</text>
            <text>大 数 据</text>
-           <text>一  览</text>
          </view>
         </navigator>
      </view>

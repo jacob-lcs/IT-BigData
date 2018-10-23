@@ -1,17 +1,33 @@
+var Bmob = require('../../dist/Bmob-1.6.3.min.js');
+
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    intro: ''
+    zhiwei:'',
+    request:'',
+    cloud:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    const query = Bmob.Query("quanguo_pjgz");
+    console.log('options.zhiwei: ', options.zhiwei)
+    query.equalTo("zhiwei", "==", options.zhiwei);
+    query.find().then(res => {
+      console.log(res)
+      this.setData({
+        request: res[0].request,
+        cloud: res[0].cloud,
+        zhiwei:res[0].zhiwei
+      })
+    });
   },
 
   /**

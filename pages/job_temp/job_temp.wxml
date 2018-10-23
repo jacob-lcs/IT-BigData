@@ -3,24 +3,25 @@
     <navigator>
       
       <view class="job_info">
-
+    
          <view class="left">
-
+         
             <view class="fang"></view>
-             <!--职位名称-->
-            <view class="jobname">{{zhiwei}}</view>
-
+              <navigator url="../job_details/job?zhiwei={{zhiwei}}">
+                 <!--职位名称-->
+                 <view class="jobname">{{zhiwei}}</view>
+               </navigator>
          </view>
 
-        <view class="right">
+         <view class="right">
 
               <!--平均工资、在招岗位数量-->
                <text class="salary">{{gongzi}}RMB </text>
                <text class="sum">{{shuliang}}个在招职位</text>
 
-        </view>
+         </view>
 
-         
+          
       </view>
 
      

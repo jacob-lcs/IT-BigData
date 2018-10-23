@@ -1,24 +1,93 @@
- <view class="container">
-    
-    <view class="item">
+
+<view class="container">  
+
+    <view class="two">
+
+        <view class="item1">
+            <navigator url="../bar/index">
+              <text class="word1">热门城市</text>
+              <text class="word2">公司规模统计</text> 
+            </navigator>       
+        </view>
+
+        <view class="item2">
+           <navigator url="../average_salary/salary"> 
+               <text class="word2">不同职业对比</text>  
+           </navigator>    
+        </view>
+
+    </view>
+
+
+
+
+    <view class="two">
+
+        <view class="item3">
+          <navigator url="../ranks/ranks">
+            <text class="word1">你想看的</text>
+            <text class="word2">公司排名</text> 
+          </navigator>       
+        </view>
+
+        <view class="item4">
+          <navigator url="../edu_req/edu">
+            <text class="word1">热门城市</text>
+            <text class="word2">学历要求</text>  
+          </navigator>   
+        </view>
+
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+  <scroll-view scroll-y="true" class="list" scroll-top="200rpx" white-space="nowrap">
+
+    <view class="item1">
       <navigator url="../bar/index">
         <image src="http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/487dad5b4096034b80eb2b17025ab482.jpg" class="photo"/>
-        <view class="detail">大公司？小公司？</view>
+        <text class="detail">大公司？小公司？</text>
       </navigator>
     </view>
 
-     <view class="item">
+     <view class="item2">
       <navigator url="../average_salary/salary">
         <image src="http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/399214fc4010fbb28013e1eda308d6bf.jpg" class="photo"/>
         <view class="detail">没有对比就没有伤害</view>
       </navigator>
     </view>
 
-    <view class="item">
+
+     <view class="item1">
+      <navigator url="../ranks/ranks">
+        <image src="http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/399214fc4010fbb28013e1eda308d6bf.jpg" class="photo"/>
+        <view class="detail">工资？福利待遇？</view>
+      </navigator>
+    </view>
+
+    <view class="item2">
       <navigator url="../edu_req/edu">
         <image src="http://bmob-cdn-21583.b0.upaiyun.com/2018/09/18/ed7813774090d8208036486c766232e3.jpg" class="photo"/>
         <view class="detail">本科僧？研究僧？</view>
       </navigator>
     </view>
  
- </view>
+  </scroll-view>-->
+ 
+
+

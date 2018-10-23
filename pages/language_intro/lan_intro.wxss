@@ -1,7 +1,12 @@
 @import "../lan_temp/lan_temp.wxss";
 
-.lan_list{
+.scrollfood{
+  height: 100%;
+  background: #f7f5f9;
+}
 
+.lan_list{
+  background: #f7f5f9;
   display: flex;
   flex-wrap:wrap;
   justify-content: center;

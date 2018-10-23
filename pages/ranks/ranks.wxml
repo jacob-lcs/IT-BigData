@@ -1,0 +1,24 @@
+<view class="all">
+
+
+   <block wx:for="{{ranks}}">
+        <view class="{{cur == item.id ? 'active' : 'normal'}}" 
+        bindtap='windowTab'  data-index="{{item.id}}"> {{item.name}} </view>
+
+       <view wx:if="{{cur==item.id}}">
+          <image src="{{item.pic}}" class="pic" mode="widthFix"/>
+                
+       </view>
+   </block>
+
+
+
+
+
+
+
+
+
+
+
+</view>

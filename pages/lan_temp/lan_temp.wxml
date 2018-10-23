@@ -1,5 +1,25 @@
 <template name="lan1">
-  <view class="lan_item" style="background:grey">
+  <view class="lan_item" style="background:#e57f7d">
+    <navigator url="../lan_details/lan_details?name={{name}}">
+
+      <view class="name">{{name}} </view>
+
+    </navigator>
+  </view>
+</template>
+
+<template name="lan2">
+  <view class="lan_item" style="background:#ece0c6">
+    <navigator url="../lan_details/lan_details?name={{name}}">
+
+      <view class="name">{{name}} </view>
+
+    </navigator>
+  </view>
+</template>
+
+<template name="lan3">
+  <view class="lan_item" style="background:#acb1c5">
     <navigator url="../lan_details/lan_details?name={{name}}">
 
       <view class="name">{{name}} </view>

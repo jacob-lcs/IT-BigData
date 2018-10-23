@@ -3,5 +3,7 @@
     "ec-canvas": "../../ec-canvas/ec-canvas",
     "i-tabs": "/dist/tabs/index",
     "i-tab": "/dist/tab/index"
-  }
+  },
+
+  "navigationBarTitleText": "详情"
 }

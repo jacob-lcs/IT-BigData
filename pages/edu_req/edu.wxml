@@ -2,9 +2,24 @@
 
  <view class="container">
 
-   <view class="" wx:for="{{pic}}">
-     <image class="pic" src="{{item}}" mode="aspectFit"></image>
-   </view>
+
+   <scroll-view scroll-x="true"  class="scrollwindow">
+     <view class="nav_city">
+  
+      <block wx:for="{{group}}">
+        <view class="{{cur == item.id ? 'active' : 'nav_city_items'}}" 
+        bindtap='windowTab'  data-index="{{item.id}}"> {{item.city}} </view>
+      </block>
+
+     </view>
+    
+   </scroll-view>
+
+    <image src="{{group[cur-1].pic}}" class="pic"/>  
+    
+      <view class="analysis"> 
+       <text>{{text}}</text>
+      </view>
 
  </view>
 

@@ -1,3 +1,8 @@
+.container{
+  background: #f7f5f9;
+}
+
+
 .title {
   display: flex;
   height: 100rpx;
@@ -5,18 +10,20 @@
   margin: 0 20rpx;
 }
 
-.line {
-  width: 50rpx;
-  height: 3rpx;
-  background: rgb(161, 161, 161);
-  margin: 0 0 0 20rpx;
-}
 
 .text {
-  margin: 0 0 0 20rpx;
+  margin: 0 0 0 40rpx;
+  font-weight: bold;
 }
 
 .content {
   margin: 0 60rpx 50rpx 60rpx;
   font-size: 28rpx;
+}
+
+.line{
+  background: #E0E3DA;
+  width: 140rpx;
+  height: 5rpx;
+  margin: 40rpx 0 0 60rpx ;
 }

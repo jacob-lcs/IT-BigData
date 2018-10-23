@@ -2,12 +2,21 @@
 
 <import src="../lan_temp/lan_temp.wxml" />
 
-<scroll-view scroll-y="true" class="scrollfood" scroll-into-view="1" scroll-top="200rpx">
+<scroll-view scroll-y="true" class="scrollfood" scroll-into-view="1" scroll-top="200rpx" white-space="nowrap">
 
   <view class="lan_list">
     <block wx:for="{{lan_list}}">
+      <view wx:if="{{index==1||index==5||index==6||index==11}}">
+        <template is="lan1" data="{{...item}}" />
+      </view>
 
-      <template is="lan1" data="{{...item}}" />
+       <view wx:if="{{index==0||index==4||index==8||index==10}}">
+        <template is="lan2" data="{{...item}}" />
+      </view>
+
+       <view wx:if="{{index==2||index==3||index==7||index==12||index==9}}">
+        <template is="lan3" data="{{...item}}" />
+      </view>
 
     </block>
   </view>
