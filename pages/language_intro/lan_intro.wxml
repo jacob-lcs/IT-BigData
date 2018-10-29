@@ -10,11 +10,11 @@
         <template is="lan1" data="{{...item}}" />
       </view>
 
-       <view wx:if="{{index==0||index==4||index==8||index==10}}">
+      <view wx:if="{{index==0||index==4||index==8||index==10}}">
         <template is="lan2" data="{{...item}}" />
       </view>
 
-       <view wx:if="{{index==2||index==3||index==7||index==12||index==9}}">
+      <view wx:if="{{index==2||index==3||index==7||index==12||index==9}}">
         <template is="lan3" data="{{...item}}" />
       </view>
 

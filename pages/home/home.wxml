@@ -1,61 +1,48 @@
-
-
 <view class="index">
 
- <!-- 
- <view class="item_list" wx:for="{{list}}" wx:key="{{list}}">
-      <navigator url="{{item.url}}">
-        <image src="{{item.pic}}" class="item_pic"></image>
-        <view class="item_text">{{item.name}}</view>
-      </navigator>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class="swiper">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+
+        <image src="{{item.url}}" class="poster" />
+
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="downpart">
+
+    <view class="bigdatas">
+      <!-- <navigator url='/pages/bigdatas/bigdatas'>
+
+        <view class="text1">
+          <text>行 业</text>
+          <text>大 数 据</text>
+        </view>
+      </navigator> -->
+      <view class="predict" bindtap='predict'>
+          <view class="text2">职位预测</view>
+      </view>
+
+      <view class="data" bindtap='bigdata'>
+          <view class="text3">行业大数据</view>
+      </view>
     </view>
-    -->
-  
-   
-   <swiper indicator-dots="{{indicatorDots}}"  
-           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"
-           class="swiper">  
-         <block wx:for="{{imgUrls}}">  
-           <swiper-item>  
-              
-               <image src="{{item.url}}" class="poster"/>  
-             
-           </swiper-item>  
-         </block>  
- </swiper>  
-
-    <view class="downpart">
-
-     <view class="bigdatas">
-        <navigator url='/pages/bigdatas/bigdatas'>
-
-         <view class="text1">
-           <text>行 业</text>
-           <text>大 数 据</text>
-         </view>
-        </navigator>
-     </view>
 
 
-     <view class="right">
+    <view class="right">
 
-       <view class="joblist">
-          <navigator url='/pages/list/list'>
-            <view class="text2">岗位分类</view>
-          </navigator>
-       </view>
+      <view class="joblist" bindtap='joblist'>
+          <view class="text2">岗位分类</view>
+      </view>
 
-       <view class="lan_intro">
-          <navigator url='/pages/language_intro/lan_intro'>
-            <view class="text3">语言介绍</view>
-          </navigator>
-       </view>
-    
-     </view>
+      <view class="lan_intro" bindtap='lan_intro'>
+          <view class="text3">语言介绍</view>
+      </view>
 
     </view>
- 
+
+  </view>
+
 
 </view>
-
-

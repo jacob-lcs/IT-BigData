@@ -11,7 +11,8 @@
     "pages/average_salary/salary",
     "pages/test/test",
     "pages/bar/index",
-    "pages/ranks/ranks"
+    "pages/ranks/ranks",
+    "pages/predict/predict"
   ],
   "window": {
     "backgroundTextStyle": "light",

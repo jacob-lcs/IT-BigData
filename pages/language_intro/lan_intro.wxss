@@ -1,7 +1,7 @@
 @import "../lan_temp/lan_temp.wxss";
 
 .scrollfood{
-  height: 100%;
+  height: 100vh;
   background: #f7f5f9;
 }
 
