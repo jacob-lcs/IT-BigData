@@ -8,6 +8,21 @@ Page({
 
   },
 
+  tijiao:function(){
+    wx.request({
+      url: 'https://www.lcscoder.cn/predict', 
+      data: {
+        intro: '我擅长使用C++语言编写程序，多次参加ACM竞赛并获奖，而且对算法特别感兴趣'
+      },
+      header: {
+        'content-type': 'application/json' 
+      },
+      success(res) {
+        console.log(res.data)
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

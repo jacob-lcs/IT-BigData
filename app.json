@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/predict/predict",
     "pages/home/home",
     "pages/job_details/job",
     "pages/lan_details/lan_details",
@@ -11,8 +12,8 @@
     "pages/average_salary/salary",
     "pages/test/test",
     "pages/bar/index",
-    "pages/ranks/ranks",
-    "pages/predict/predict"
+    "pages/ranks/ranks"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
