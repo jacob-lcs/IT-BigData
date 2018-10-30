@@ -1,3 +1,20 @@
 <!--pages/predict/predict.wxml-->
-<input placeholder='请输入你的技能，尽可能详细哦' class='input'></input>
-<button bindtap='tijiao'>提交</button>
+<!-- <view class='all'>
+  <input value='{{intro}}' placeholder='请输入你的技能，尽可能详细哦' class='input' bindinput='input_intro'></input>
+  <button bindtap='tijiao'>提交</button>
+</view> -->
+
+<!--pages/suggest/suggest.wxml-->
+
+<view class='zong'>
+<text>\n</text>
+  <view class='sug_xz'>
+    <text>\n</text>
+    <text>\n</text>
+    <!-- <input class="sug_in" value='{{suggestion}}' bindinput="sugInput" /> -->
+    <view class="sug_in">
+      <textarea value='{{intro}}' bindinput="input_intro"  placeholder='请尽可能详细的描述你自己的长处哦，最长输入140字' />
+    </view>
+    <button class='btn' hover-class='btn_hover' bindtap="tijiao">提 交</button>
+  </view>
+</view>

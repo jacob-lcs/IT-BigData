@@ -1,49 +1,22 @@
-// pages/predict/predict.js
-let that = this
-var result = ''
+// pages/pre_result/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    result:'',
-    intro:''
-  },
+    result:''
 
-  input_intro: function (e) {
-    this.setData({
-      intro: e.detail.value
-    })
-  },
-
-  tijiao:function(){
-
-    
-    wx.request({
-      url: 'https://www.lcscoder.cn/predict', 
-      data: {
-        intro: this.data.intro
-      },
-      header: {
-        'content-type': 'application/json' 
-      },
-      success(res) {
-        result = res.data['info']
-        wx.navigateTo({
-          url: '../pre_result/index?result=' + result,
-        })
-      }
-    })
-    
-    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      result: options.result
+    })
+    console.log("传递给预测结果的数据",this.data.result)
   },
 
   /**
