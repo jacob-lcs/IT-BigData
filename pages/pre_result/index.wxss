@@ -1,1 +1,22 @@
 /* pages/pre_result/index.wxss */
+
+.all {
+  background-image: url('https://6269-bigdata-881a98-1256377994.tcb.qcloud.la/success.jpg?sign=5d677b9ec5dbc68b56b781afdf901941&t=1540917126');
+  height: 100vh;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+
+.re {
+  /* margin-top: 50rpx; */
+}
+
+.text {
+  color: rgb(37, 156, 117);
+  font-size: 60rpx;
+}
+
+.result {
+  color: rgb(20, 75, 158);
+  font-size: 80rpx;
+}

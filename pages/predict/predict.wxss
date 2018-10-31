@@ -58,7 +58,6 @@
 }
 
 .sug_xz {
-  /* height: 850rpx; *//* background-image: url('https://github.com/lcs1998/suggestions/blob/master/images/bgimg.png?raw=true');  *//* background-image: url('../../images/bgimg.png'); */
   background-repeat: no-repeat;
   background-position-y: 0rpx;
   background-position-x: 0rpx;
@@ -77,10 +76,6 @@
   margin-right: 110rpx;
   font-size: 35rpx;
   zoom: 80%;
-  /* height: 60rpx; 
-   display: flex;
-  flex-direction: row;
-  justify-content: space-around; */
 }
 
 .radio-group {
