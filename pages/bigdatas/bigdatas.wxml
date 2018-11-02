@@ -3,39 +3,28 @@
 
     <view class="two">
 
-        <view class="item1">
-            <navigator url="../bar/index">
+        <view class="item1" bindtap='city'>
               <view class="word1">热门城市</view>
               <view class="word2">公司规模统计</view> 
-            </navigator>       
         </view>
 
-        <view class="item2">
-           <navigator url="../average_salary/salary"> 
+        <view class="item2" bindtap='salary'>
                <view class='word1'>不同</view>
                <view class="word2">职业对比</view>  
-           </navigator>    
         </view>
 
     </view>
 
-
-
-
     <view class="two">
 
-        <view class="item3">
-          <navigator url="../ranks/ranks">
+        <view class="item3" bindtap='ranks'>
             <view class="word1">你想看的</view>
             <view class="word2">公司排名</view> 
-          </navigator>       
         </view>
 
-        <view class="item4">
-          <navigator url="../edu_req/edu">
+        <view class="item4" bindtap='edu'>
             <view class="word1">热门城市</view>
             <view class="word2">学历要求</view>  
-          </navigator>   
         </view>
 
     </view>

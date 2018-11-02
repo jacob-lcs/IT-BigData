@@ -5,7 +5,7 @@
 </view> -->
 
 <!--pages/suggest/suggest.wxml-->
-
+<i-toast id="toast" />
 <view class='zong'>
 <text>\n</text>
   <view class='sug_xz'>

@@ -7,6 +7,30 @@ Page({
     
   },
 
+  city:function(){
+    wx.navigateTo({
+      url: '../bar/index',
+    })
+  },
+
+  salary:function(){
+    wx.navigateTo({
+      url: '../average_salary/salary',
+    })
+  },
+
+  ranks:function(){
+    wx.navigateTo({
+      url: '../ranks/ranks',
+    })
+  },
+
+  edu:function(){
+    wx.navigateTo({
+      url: '../edu_req/edu',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
