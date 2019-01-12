@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/pre_result/index",
     "pages/home/home",
     "pages/job_details/job",
     "pages/lan_details/lan_details",
@@ -13,7 +13,6 @@
     "pages/test/test",
     "pages/bar/index",
     "pages/ranks/ranks",
-    "pages/pre_result/index",
     "pages/predict/predict"
   ],
   "window": {

@@ -1,8 +1,8 @@
 <!--pages/pre_result/index.wxml-->
 <view class='all'>
   <view class='re'>
-    <text class='text'>\n 原来 \n 最适合你的职业是: \n \n </text>
-    <text class='result'>{{result}}</text>
+    <text class='zhiwei'>算法工程师</text>
+    <text class='result'>{{result}}456</text>
   </view>
 
 </view>
