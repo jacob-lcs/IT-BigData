@@ -1,8 +1,9 @@
 <!--pages/pre_result/index.wxml-->
 <view class='all'>
   <view class='re'>
-    <text class='zhiwei'>算法工程师</text>
-    <text class='result'>{{result}}456</text>
+    <text class='zhiwei'>{{result}}</text>
+    <image src='{{imgurl1}}'  class='img'></image>
+    <image src='{{imgurl2}}'  class='img'></image>
   </view>
 
 </view>

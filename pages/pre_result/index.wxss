@@ -62,3 +62,9 @@
 
   color: black;
 }
+
+.img{
+  width: 500rpx;
+  height: 300rpx;
+  border-radius: 5%
+}
